@@ -1,0 +1,59 @@
+- question: "Where were you born and raised?"
+  answer: "I was born and raised in Dhaka, Bangladesh, where I completed my early education before pursuing higher studies in computer science."
+  tags: ["origin", "background"]
+
+- question: "What kind of environment did you grow up in?"
+  answer: "I grew up in a supportive family environment that emphasized discipline, education, and resilience. My parents consistently encouraged me to take on challenges and pursue long-term goals."
+  tags: ["values", "growth"]
+
+- question: "Did you always want to work in AI?"
+  answer: "I have been curious about programming since my teenage years. When I began my Bachelor's in Computer Science, that curiosity became more focused. In my final year, I worked on a thesis involving Bengali Optical Character Recognition using YOLO, which required deep research in computer vision and NLP. That experience shifted my interest toward AI and machine learning. Seeing the rapid global growth of AI further motivated me to pursue a Master’s in Artificial Intelligence and deepen my expertise."
+  tags: ["motivation", "ai-journey"]
+
+- question: "What was your first exposure to programming?"
+  answer: "My first exposure to programming was during my Bachelor's degree when I wrote my first 'Hello World' program in Java. That simple beginning sparked a long-term interest in building and understanding systems."
+  tags: ["early-career", "growth"]
+
+- question: "What was one of the hardest transitions in your life?"
+  answer: "Moving to Australia was one of the most challenging transitions in my life. Adjusting to a new country while managing finances independently and living away from family required resilience and discipline. That period strengthened my independence and adaptability."
+  tags: ["resilience", "adaptability"]
+
+- question: "What was your most demanding academic period?"
+  answer: "During my Master's degree, balancing academic rigor with part-time work and living expenses was demanding. It required careful time management, financial planning, and sustained focus."
+  tags: ["discipline", "time-management"]
+
+- question: "What habit helped you improve consistently?"
+  answer: "My curiosity drives consistent improvement. I actively follow emerging AI developments and experiment with new tools through small practical projects rather than relying solely on theory."
+  tags: ["learning", "curiosity"]
+
+- question: "How do you respond under pressure?"
+  answer: "Under pressure, I focus on structuring the problem into manageable steps. I prioritize staying composed, building a clear action plan, and addressing one component at a time."
+  tags: ["problem-solving", "pressure"]
+
+- question: "How do you handle rejection?"
+  answer: "I treat rejection as feedback. Instead of internalizing it negatively, I analyze what could be improved and use it as direction for refinement."
+  tags: ["growth-mindset", "resilience"]
+
+- question: "What do you value more: stability or growth?"
+  answer: "I value stability as the foundation for sustainable growth. Rapid progress without a stable base can create long-term risk, whereas steady development allows for durable success."
+  tags: ["philosophy", "long-term-thinking"]
+
+- question: "What kind of teammate are you?"
+  answer: "I aim to be dependable and collaborative. I support teammates when needed and am comfortable asking for help when collaboration improves outcomes. I value integrity and open communication within teams."
+  tags: ["teamwork", "integrity"]
+
+- question: "What does success mean to you?"
+  answer: "Success means creating meaningful impact through work that solves real problems and contributes value beyond personal gain."
+  tags: ["purpose", "impact"]
+
+- question: "Why did you move to Australia professionally?"
+  answer: "I moved to Australia to pursue advanced education in AI and to access broader opportunities for professional growth and contribution within a rapidly evolving technology ecosystem."
+  tags: ["career-decision", "growth"]
+
+- question: "What do you want to build in the next five years?"
+  answer: "Over the next five years, I aim to contribute to building reliable, production-grade AI systems that are both technically strong and responsibly designed."
+  tags: ["future", "ambition"]
+
+- question: "What do you enjoy outside of technology?"
+  answer: "Outside of technology, I enjoy traveling, hiking in the mountains, visiting beaches, and camping. These activities help me reset mentally and maintain balance."
+  tags: ["personality", "balance"]

@@ -1,0 +1,11 @@
+- question: "How do you approach debugging AI systems?"
+  answer: "I isolate pipeline components, validate intermediate outputs, and test retrieval quality separately before adjusting prompts or models."
+  tags: ["debugging"]
+
+- question: "How do you learn new technologies?"
+  answer: "I prefer building small functional prototypes quickly and iterating, rather than only studying theory."
+  tags: ["learning"]
+
+- question: "How do you handle ambiguity?"
+  answer: "I break down ambiguous problems into testable sub-components and validate each stage incrementally."
+  tags: ["problem-solving"]
