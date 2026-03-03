@@ -16,11 +16,7 @@ load_dotenv()
 EMBED_MODEL = os.getenv("EMBED_MODEL", "text-embedding-3-small")
 CHAT_MODEL = os.getenv("CHAT_MODEL", "gpt-4o-mini")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
-
-if not OPENAI_API_KEY:
-    raise RuntimeError("OPENAI_API_KEY is missing in backend/.env")
-
-client = OpenAI(api_key=OPENAI_API_KEY)
+client = OpenAI(api_key=OPENAI_API_KEY) if OPENAI_API_KEY else None
 
 app = FastAPI(title="Portfolio AI Backend", version="0.2.0")
 app.add_middleware(
@@ -150,6 +146,8 @@ def load_qa_yaml_files(qa_dir: Path) -> List[Dict[str, Any]]:
 
 
 def embed_text(text: str) -> np.ndarray:
+    if client is None:
+        raise RuntimeError("OPENAI_API_KEY is missing")
     response = client.embeddings.create(model=EMBED_MODEL, input=text)
     return np.array(response.data[0].embedding, dtype=np.float32)
 
@@ -170,6 +168,8 @@ def keyword_overlap_score(query: str, chunk: Dict[str, Any]) -> float:
 def generate_grounded_answer(
     question: str, context_chunks: List[Dict[str, Any]], history: List[Dict[str, str]]
 ) -> str:
+    if client is None:
+        raise RuntimeError("OPENAI_API_KEY is missing")
     context_blocks = []
     for idx, item in enumerate(context_chunks, start=1):
         context_blocks.append(
@@ -246,7 +246,11 @@ def startup_ingest() -> None:
 
 @app.get("/api/health")
 def health() -> Dict[str, Any]:
-    return {"status": "ok", "indexed_chunks": len(KB_CHUNKS)}
+    return {
+        "status": "ok",
+        "indexed_chunks": len(KB_CHUNKS),
+        "openai_key_present": bool(OPENAI_API_KEY),
+    }
 
 
 @app.post("/api/ingest")
