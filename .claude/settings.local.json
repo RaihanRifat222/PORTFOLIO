@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls:*)",
+      "Bash(source venv/Scripts/activate)",
+      "Bash(pip show:*)",
+      "Bash(npm run:*)",
+      "Bash(pip install:*)"
+    ]
+  }
+}
